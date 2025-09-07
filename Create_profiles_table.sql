@@ -1,3 +1,6 @@
+-- Setup the Users Auth
+select * from auth.users;
+
 -- Create profiles table
 create table public.profiles (
   id uuid primary key references auth.users(id) on delete cascade,
